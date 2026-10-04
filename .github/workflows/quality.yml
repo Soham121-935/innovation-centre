@@ -1,0 +1,19 @@
+name: Repository quality
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Validate all project workspaces and run available host tests
+        run: make test
+      - name: Run P03 host tests with sanitizers
+        run: make test-p03-sanitized

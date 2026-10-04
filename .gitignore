@@ -1,0 +1,42 @@
+# Compiled and generated embedded artifacts
+/build/
+**/Debug/
+**/Release/
+**/build/*.o
+**/build/*.obj
+**/build/*.d
+**/build/*.elf
+**/build/*.out
+**/build/*.hex
+**/build/*.bin
+**/build/*.map
+**/build/*.list
+*.o
+*.obj
+*.elf
+*.out
+*.hex
+*.bin
+*.map
+*.list
+*.d
+
+# IDE/user-specific state
+.vscode/
+.idea/
+*.launch
+*.ccsworkspace
+
+# Local credentials and settings
+.env
+.env.*
+!.env.example
+**/config.local.*
+**/secrets.*
+**/credentials.*
+
+# Python caches and virtual environments
+__pycache__/
+.pytest_cache/
+.venv/
+venv/
